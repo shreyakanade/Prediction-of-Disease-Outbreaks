@@ -57,7 +57,8 @@ if selected == 'Diabetes Prediction':
 elif selected == 'Heart Disease Prediction':
     st.title("HEART DISEASE PREDICTION USING ML")
     col1,col2,col3 = st.columns(3)
-
+   with col1:
+        Gender = st.text_input('Gender')
     with col1:
         age = st.text_input("Age of the Person")
     with col2:
@@ -102,6 +103,8 @@ elif selected=='Parkinsons Disease Prediction':
     #MDVP:RAP,MDVP:PPQ,Jitter:DDP,MDVP:Shimmer,MDVP:Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,
     # MDVP:APQ,Shimmer:DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE
     col1,col2,col3,col4 = st.columns(4)
+    with col1:
+        Gender = st.text_input('Gender')
     with col1:
         mdvpFOhz = st.text_input("MDVP:Fo(Hz)")
     with col2:

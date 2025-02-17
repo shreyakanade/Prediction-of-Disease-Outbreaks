@@ -25,6 +25,8 @@ if selected == 'Diabetes Prediction':
     st.title('DIABETES PREDICTION USING ML')
     col1,col2,col3 = st.columns(3)
     with col1:
+        Gender = st.text_input('Gender')
+    with col1:
         Pregnancies = st.text_input('No Of Pregnancies')
     with col2:
         Glucose = st.text_input('Glucose Level')
